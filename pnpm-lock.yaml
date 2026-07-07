@@ -138,8 +138,8 @@ importers:
         specifier: 0.0.5
         version: 0.0.5(astro@6.0.5(@types/node@24.6.0)(jiti@2.6.1)(lightningcss@1.29.2)(rollup@4.60.1)(tsx@4.20.5)(typescript@5.9.3)(yaml@2.8.3))(typescript@5.9.3)
       cidr-tools:
-        specifier: 11.0.3
-        version: 11.0.3
+        specifier: 12.1.2
+        version: 12.1.2
       codeowners-utils:
         specifier: 1.0.2
         version: 1.0.2
@@ -2904,6 +2904,7 @@ packages:
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
+    deprecated: Potential CWE-502 - Update to 1.3.1 or higher
 
   '@valibot/to-json-schema@1.6.0':
     resolution: {integrity: sha512-d6rYyK5KVa2XdqamWgZ4/Nr+cXhxjy7lmpe6Iajw15J/jmU+gyxl2IEd1Otg1d7Rl3gOQL5reulnSypzBtYy1A==}
@@ -3327,9 +3328,9 @@ packages:
     resolution: {integrity: sha512-77PSwercCZU2Fc4sX94eF8k8Pxte6JAwL4/ICZLFjJLqegs7kCuAsqqj/70NQF6TvDpgFjkubQB2FW2ZZddvQg==}
     engines: {node: '>=8'}
 
-  cidr-tools@11.0.3:
-    resolution: {integrity: sha512-7p0rp7B2P+nZfBkJlrQzUMDyUHeYK2h/XCJY80VUl1v5oxwLxQjZMy39BXVOXugwAX67l0oJ/QQ6OhANgUtUbw==}
-    engines: {node: '>=18'}
+  cidr-tools@12.1.2:
+    resolution: {integrity: sha512-31tot6DSnNHhgs0SPHyr9E3mneltfcj1tsePwpixFWxMgYi125nIguEFOFl8tl9gLohw628g+0Qcv11gtFeC4w==}
+    engines: {node: '>=22'}
 
   cjs-module-lexer@1.4.3:
     resolution: {integrity: sha512-9z8TZaGM1pfswYeXrUpzPrkx8UnWYdhJclsiYMm6x/w5+nN+8Tf/LnAgfLGQCm59qAOxU8WwHEq2vNwF6i4j+Q==}
@@ -4716,9 +4717,9 @@ packages:
     resolution: {integrity: sha512-XXADHxXmvT9+CRxhXg56LJovE+bmWnEWB78LB83VZTprKTmaC5QfruXocxzTZ2Kl0DNwKuBdlIhjL8LeY8Sf8Q==}
     engines: {node: '>= 12'}
 
-  ip-bigint@8.3.3:
-    resolution: {integrity: sha512-r1bCRPxLv4PcyIB95FbsxaVvymNhFfbsIxrFdHqgZhWOBvfEPnzIHDGLAP+85cBozVf+XGaM00em4ZoJHm9EHw==}
-    engines: {node: '>=18'}
+  ip-bigint@9.0.6:
+    resolution: {integrity: sha512-dpEy7cSzYM9JsL6Ai9KGO0eCKALRtbYCb57Nfc8/kflSyBakf1Orb6/8u+NDlhS+7THbjrOfY52z9PnJXh/mWA==}
+    engines: {node: '>=22'}
 
   ipaddr.js@1.9.1:
     resolution: {integrity: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==}
@@ -6601,6 +6602,7 @@ packages:
   tsconfck@3.1.6:
     resolution: {integrity: sha512-ks6Vjr/jEw0P1gmOVwutM3B7fWxoWBL2KRDb1JfqGVawBmO5UsvmWOQFGHBPl5yxYz4eERr19E6L7NMv+Fej4w==}
     engines: {node: ^18 || >=20}
+    deprecated: unmaintained
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
@@ -10327,9 +10329,9 @@ snapshots:
 
   ci-info@4.4.0: {}
 
-  cidr-tools@11.0.3:
+  cidr-tools@12.1.2:
     dependencies:
-      ip-bigint: 8.3.3
+      ip-bigint: 9.0.6
 
   cjs-module-lexer@1.4.3: {}
 
@@ -12128,7 +12130,7 @@ snapshots:
 
   ip-address@10.1.0: {}
 
-  ip-bigint@8.3.3: {}
+  ip-bigint@9.0.6: {}
 
   ipaddr.js@1.9.1: {}
 
